@@ -37,6 +37,9 @@
       <view class="tab-item {{currentTab==2 ? 'on' : ''}}" data-current="2" bindtap="swichNav">距离</view>
     
     </view>
+    <view class="biceng">
+      <image src="/images/笔.png" class="bi">
+    </image></view>
     
     
     <!--内容主体-->

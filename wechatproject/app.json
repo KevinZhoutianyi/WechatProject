@@ -1,12 +1,12 @@
 {
   "pages": [
-    "pages/gengduosousuo/gengduosousuo",
     "pages/shouye/shouye",
+    "pages/gengduosousuo/gengduosousuo",
+    
     "pages/sousuo/sousuo",
     "pages/renwu/renwu",
     "pages/tongzhi/tongzhi",
-    "pages/wode/wode",
-    "pages/gengduosousuotiaojian"
+    "pages/wode/wode"
   
   ],
   "window": {
