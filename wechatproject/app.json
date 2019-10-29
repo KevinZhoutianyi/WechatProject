@@ -1,0 +1,52 @@
+{
+  "pages": [
+    "pages/gengduosousuo/gengduosousuo",
+    "pages/shouye/shouye",
+    "pages/sousuo/sousuo",
+    "pages/renwu/renwu",
+    "pages/tongzhi/tongzhi",
+    "pages/wode/wode",
+    "pages/gengduosousuotiaojian"
+  
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#ffffff",
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "聚友社区",
+    "backgroundColor": "#eeeeee",
+    "backgroundTextStyle": "light",
+    "enablePullDownRefresh": false
+  },
+  "tabBar": {
+    "color": "#a9b7b7",
+    "selectedColor": "#11cd6e",
+    "borderStyle": "white",
+    "list": [
+      {
+        "selectedIconPath": "images/首页.png",
+        "iconPath": "images/首页.png",
+        "pagePath": "pages/shouye/shouye",
+        "text": "首页"
+      },
+      {
+        "selectedIconPath": "images/任务.png",
+        "iconPath": "images/任务.png",
+        "pagePath": "pages/renwu/renwu",
+        "text": "任务"
+      },
+      {
+        "selectedIconPath": "images/通知.png",
+        "iconPath": "images/通知.png",
+        "pagePath": "pages/tongzhi/tongzhi",
+        "text": "通知"
+      },
+      {
+        "selectedIconPath": "images/我的.png",
+        "iconPath": "images/我的.png",
+        "pagePath": "pages/wode/wode",
+        "text": "我的"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}
