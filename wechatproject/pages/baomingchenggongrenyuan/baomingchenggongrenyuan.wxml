@@ -1,0 +1,6 @@
+<view class="pageColumn">
+  <view class="yigeren" wx:for="{{range}}" >
+    <image class="touxiang" src="{{item.src}}"></image>
+    <text class="nicheng">{{item.name}}</text>
+  </view>
+</view>

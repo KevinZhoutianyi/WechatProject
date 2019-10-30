@@ -15,6 +15,24 @@ Page({
   onLoad: function (options) {
 
   },
+  bindInput: function (e) {
+    // this.setData({
+    //   inputValue: e.detail.value
+    // })
+
+    wx.navigateTo({
+      url: '../sousuojieguo/sousuojieguo'
+    })
+  },
+  tapFunction: function (e) {
+    // this.setData({
+    //   inputValue: e.detail.value
+    // })
+
+    wx.navigateTo({
+      url: '../gengduosousuo/gengduosousuo'
+    })
+  },
 
   /**
    * 生命周期函数--监听页面初次渲染完成

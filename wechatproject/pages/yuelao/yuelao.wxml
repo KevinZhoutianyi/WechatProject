@@ -1,0 +1,116 @@
+<!--pages/yuelao/yuelao.wxml-->
+<view class="pageColumn">
+
+  <view class="shang">
+    <image class="banner" src="/images/banner.png"></image>
+    <view class="zuiyihang">
+      <view class="zuiyijiangnan">最忆江南文明行</view>
+      <view class="youban">
+        <image src="/images/touxiang.png"></image>
+        <view class="faqiren">发起人姓名</view>
+      </view>
+    </view>
+    <view class="juzhong">
+      <text class="riqi">2019年7月1日-2019年7月3日</text> </view>
+    <view class="juzhong">
+      <text class="didian">上海市静安区共和新路街道</text>
+    </view>
+    
+    <view class="renshuhang">
+      <view class="renshuzuoban">
+        <view>人数:</view>
+        <view class="ershi">20</view>
+        <view>/100</view>
+        <view class="kuohao">(10友币/人)</view>
+      </view>
+      <view class="renshuyouban">
+      <image src="/images/任务.png" class="disanceng">
+        </image>
+      <image src="/images/首页.png" class="dierceng">
+        </image>
+        <image src="/images/touxiang.png" class="diyiceng">
+        </image>
+        
+          
+        <image src="/images/箭头.png" class="jiantou"></image>
+      </view>
+    </view>
+
+
+  </view>
+
+  <view class="zhong">
+    
+
+    <view class="swiper-tab">
+    
+      <view class="tab-item {{currentTab==0 ? 'on' : ''}}" data-current="0" bindtap="swichNav">任务说明</view>
+      
+      <view class="tab-item {{currentTab==1 ? 'on' : ''}}" data-current="1" bindtap="swichNav">任务要求</view>
+      
+      <view class="tab-item {{currentTab==2 ? 'on' : ''}}" data-current="2" bindtap="swichNav">留言咨询</view>
+    
+    </view>
+    
+    
+    
+    <!--内容主体-->
+    
+    <swiper class="swiper" current="{{currentTab}}" duration="200" bindchange="swiperChange">
+    
+      <swiper-item>
+      
+        <!-- 最新 -->
+        <view class="sanfenzhiyi">
+          
+           12313
+        </view>
+        
+      </swiper-item>
+        
+      <swiper-item>
+        
+        <!-- 最新 -->
+        <view class="sanfenzhiyi">
+          
+         312
+        </view>
+        
+        
+      </swiper-item>
+        
+      <swiper-item>
+        
+        <!-- 最新 -->
+        <view class="sanfenzhiyi">
+          
+         321
+        </view>
+        
+      </swiper-item>
+    
+    </swiper>
+
+    
+    
+  </view>
+
+  <view class="xia">
+    <view class="xiazuo">
+      <view class="liuyan ">留言</view>
+    </view>
+    <view class="xiayou">
+      <view class="woyaobaoming">我要报名</view>
+    </view>
+  </view>
+
+
+
+
+
+
+
+
+
+
+</view>

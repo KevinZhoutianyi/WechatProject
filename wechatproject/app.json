@@ -1,13 +1,19 @@
 {
   "pages": [
+    "pages/yuelao/yuelao",
     "pages/shouye/shouye",
-    "pages/gengduosousuo/gengduosousuo",
+    "pages/baomingchenggongrenyuan/baomingchenggongrenyuan",
     
+    "pages/sousuojieguo/sousuojieguo",
+    "pages/zhiyuanzhaomu3/zhiyuanzhaomu3",
+    "pages/zhiyuanzhaomu2/zhiyuanzhaomu2",
+    "pages/zhiyuanzhaomu1/zhiyuanzhaomu1",
+    "pages/gengduosousuo/gengduosousuo",
     "pages/sousuo/sousuo",
     "pages/renwu/renwu",
     "pages/tongzhi/tongzhi",
     "pages/wode/wode"
-  
+    
   ],
   "window": {
     "navigationBarBackgroundColor": "#ffffff",

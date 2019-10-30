@@ -1,39 +1,15 @@
-// pages/gengduosousuo/gengduosousuo.js
+// pages/zhiyuanzhaomu1/zhiyaozhaomu1.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
-  },
-
-  tapFunction1: function (e) {
-    // this.setData({
-    //   inputValue: e.detail.value
-    // })
-
-    wx.navigateTo({
-      url: '../zhiyuanzhaomu1/zhiyuanzhaomu1'
-    })
-  },
-  tapFunction2: function (e) {
-    // this.setData({
-    //   inputValue: e.detail.value
-    // })
-
-    wx.navigateTo({
-      url: '../zhiyuanzhaomu2/zhiyuanzhaomu2'
-    })
-  },
-  tapFunction3: function (e) {
-    // this.setData({
-    //   inputValue: e.detail.value
-    // })
-
-    wx.navigateTo({
-      url: '../zhiyuanzhaomu3/zhiyuanzhaomu3'
-    })
+    list: [
+      { "name": "体育运动", "detail": "针对运动主题的活动，如跑步、门球、广场舞", "isTrue": "1" }, 
+    { "name": "文化娱乐", "detail": "针对文化主题的活动，如书画、棋牌、唱歌、英语角等", "isTrue": "0" }, 
+    { "name": "社区交友", "detail": "针对各类聚会的活动，如生日会、主题派对等", isTrue: "0" },
+      { "name": "表演竞赛", "detail": "针对各类表扬竞赛类活动，如最美妈妈竞赛等", "isTrue": "0" }]
   },
 
   /**

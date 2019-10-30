@@ -1,39 +1,18 @@
-// pages/gengduosousuo/gengduosousuo.js
+// pages/baomingchenggongrenyuan/baomingchenggongrenyuan.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
+    range:[
+      { src: "/images/touxiang.png" ,'name':"张大姐"},
+      { src: "/images/touxiang.png", 'name': "李大妈" },
+      { src: "/images/touxiang.png", 'name': "coolcoolboi" },
+      { src: "/images/touxiang.png", 'name': "张大姐" },
+      { src: "/images/touxiang.png", 'name': "李大妈" }
+    ]
 
-  },
-
-  tapFunction1: function (e) {
-    // this.setData({
-    //   inputValue: e.detail.value
-    // })
-
-    wx.navigateTo({
-      url: '../zhiyuanzhaomu1/zhiyuanzhaomu1'
-    })
-  },
-  tapFunction2: function (e) {
-    // this.setData({
-    //   inputValue: e.detail.value
-    // })
-
-    wx.navigateTo({
-      url: '../zhiyuanzhaomu2/zhiyuanzhaomu2'
-    })
-  },
-  tapFunction3: function (e) {
-    // this.setData({
-    //   inputValue: e.detail.value
-    // })
-
-    wx.navigateTo({
-      url: '../zhiyuanzhaomu3/zhiyuanzhaomu3'
-    })
   },
 
   /**

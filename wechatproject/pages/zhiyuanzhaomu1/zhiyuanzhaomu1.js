@@ -1,39 +1,14 @@
-// pages/gengduosousuo/gengduosousuo.js
+// pages/zhiyuanzhaomu1/zhiyaozhaomu1.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
-  },
-
-  tapFunction1: function (e) {
-    // this.setData({
-    //   inputValue: e.detail.value
-    // })
-
-    wx.navigateTo({
-      url: '../zhiyuanzhaomu1/zhiyuanzhaomu1'
-    })
-  },
-  tapFunction2: function (e) {
-    // this.setData({
-    //   inputValue: e.detail.value
-    // })
-
-    wx.navigateTo({
-      url: '../zhiyuanzhaomu2/zhiyuanzhaomu2'
-    })
-  },
-  tapFunction3: function (e) {
-    // this.setData({
-    //   inputValue: e.detail.value
-    // })
-
-    wx.navigateTo({
-      url: '../zhiyuanzhaomu3/zhiyuanzhaomu3'
-    })
+    list: [
+      { "name": "体验官", "detail": "发布产品体验需求信息，对产品使用提出意见或感受，如干货商户新上架枸杞体验", "isTrue": "1" }, 
+    { "name": "神秘客", "detail": "发布暗访质控需求信息，对产品质量提出意见和感受，如护理服务企业需要对旗下护理员服务质量作出检验", "isTrue": "0" }, 
+    { "name": "宣传员", "detail": "一般发布宣传推广需求信息，对产品宣传提供支持", "isTrue": "0" }]
   },
 
   /**

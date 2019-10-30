@@ -1,4 +1,4 @@
-// pages/gengduosousuo/gengduosousuo.js
+// pages/yuelao/yuelao.js
 Page({
 
   /**
@@ -6,35 +6,57 @@ Page({
    */
   data: {
 
+   
+      swiperImg: [
+        { src: "/images/banner.png" },
+        { src: "/images/banner.png" },
+        { src: "/images/banner.png" }
+      ],
+
+      currentTab: 0,
+
+      
+
   },
 
-  tapFunction1: function (e) {
-    // this.setData({
-    //   inputValue: e.detail.value
-    // })
+  swichNav: function (e) {
 
-    wx.navigateTo({
-      url: '../zhiyuanzhaomu1/zhiyuanzhaomu1'
+    console.log(e);
+
+    var that = this;
+
+    if (this.data.currentTab === e.target.dataset.current) {
+
+      return false;
+
+    } else {
+
+      that.setData({
+
+        currentTab: e.target.dataset.current,
+
+      })
+
+    }
+
+  },
+
+  swiperChange: function (e) {
+
+    console.log(e);
+
+    this.setData({
+
+      currentTab: e.detail.current,
+
     })
-  },
-  tapFunction2: function (e) {
-    // this.setData({
-    //   inputValue: e.detail.value
-    // })
 
-    wx.navigateTo({
-      url: '../zhiyuanzhaomu2/zhiyuanzhaomu2'
-    })
-  },
-  tapFunction3: function (e) {
-    // this.setData({
-    //   inputValue: e.detail.value
-    // })
 
-    wx.navigateTo({
-      url: '../zhiyuanzhaomu3/zhiyuanzhaomu3'
-    })
   },
+
+
+
+
 
   /**
    * 生命周期函数--监听页面加载

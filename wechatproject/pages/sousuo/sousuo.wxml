@@ -16,7 +16,7 @@
 
       <view class="gengduohang">
         <image class="jiahao" src="/images/加号.png"></image>
-        <text class="gengduo">更多搜索条件</text>
+        <text class="gengduo" bindtap="tapFunction">更多搜索条件</text>
       </view>
       
 

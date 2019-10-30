@@ -24,7 +24,7 @@
   align-items:center;
   justify-content: space-around;
   width: 100%;
-  height:40%;
+  height:35%;
   
   
 }
@@ -69,7 +69,7 @@ swiper image{
 }
 
 .xx{
-  font-size: 20rpx;
+  font-size: 26rpx;
 }
 
 text{
@@ -84,7 +84,7 @@ text{
 
 .xiabanbufen{
   width: 100%;
-  height: 60%;
+  height: 65%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -201,8 +201,8 @@ height:8%;
   width:17%;
 }
 .rentubiao{
-  width:23%;
-  height:100%;
+    width:28rpx;
+  height:30rpx;
   margin-top: 4%;
   margin-right: 4%;
 }
@@ -220,13 +220,20 @@ height:8%;
   display: flex;
   flex-direction: column;
   justify-content: end;
+  width: 100%;
+  height: 100%;
   align-items: flex-end;
 }
 .bi{
-  position: absolute;
-  z-index: 1;
-  width: 10%;
-  height: 10%;
+   position: fixed;
+
+  width:52px;
+
+  height:52px;
+
+bottom: 60px;
+
+right: 16px;
 }
 
 /* .searchcion {
@@ -238,3 +245,11 @@ height:8%;
   height: 20px;
   text-align: center;
 } */
+.baomingzhuangtai{
+  position: absolute;
+  left:40rpx;
+  top: 25rpx;
+  width: 180rpx;
+  height: 50rpx;
+  z-index: 1;
+}
