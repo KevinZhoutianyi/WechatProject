@@ -1,0 +1,113 @@
+<!--pages/sousuo/sousuo.wxml-->
+
+<view class="columnPage">
+
+    <view class='shangbanbufen' >
+
+      <view class="qingshuruhang">
+        <view class="search_arr">
+          <icon class="searchcion" size='20' type='search'></icon>
+          <input class="xx"  resize="true" placeholder="请输入搜索关键词" value="{{searchValue}}"                 bindconfirm="bindInput"/>
+        </view>
+      </view>
+       <view class="xuanchuanhang">
+        <view class="sanfenzhiyi">
+          <picker bindchange="bindPickerChange1" value="{{index1}}" range="{{array1}}">
+            <view>
+            <text class="myText">{{defaultValue1}}</text>
+            </view>
+            
+          </picker>
+          <image class="xiajian" src="/images/下箭头.png">
+            </image>
+        
+        </view>
+        <view class="sanfenzhiyi">
+          <picker bindchange="bindPickerChange2" value="{{index2}}" range="{{array2}}">
+            <view>
+            <text class="myText">{{defaultValue2}}</text>
+            </view>
+            
+          </picker>
+          <image class="xiajian" src="/images/下箭头.png">
+            </image>
+        
+        </view>
+        <view class="sanfenzhiyi">
+          <picker bindchange="bindPickerChange3" value="{{index3}}" range="{{array3}}">
+            <view>
+            <text class="myText">{{defaultValue3}}</text>
+            </view>
+            
+          </picker>
+          <image class="xiajian" src="/images/下箭头.png">
+            </image>
+        
+        </view>
+          
+        
+       </view>
+      
+      
+
+      
+
+
+      
+        
+      
+    </view>
+
+
+    <view class='xiabanbufen' >
+      <view class="zuixin" bindtap="tap">
+          <view class="zuixinneirong" >
+            <view class="tupianbufen">
+              <image class="xiaceng" src="/images/banner.png"></image>
+              <!-- <image class="shangceng" src="/images/我的.png"></image> -->
+            </view>
+            <view class="waitanhang">
+              <view>
+              <text class="waitan">外滩环境靠你我</text> 
+              </view>
+              <view class="shiba">
+                <image class="rentubiao" src="/images/人图标.png"></image> 
+                <text  class="shibayibai">18/100</text> 
+              </view>
+              
+            </view>
+            <view class="erlinghang">
+              <text>2019-10-10</text> 
+              <text>共和新路</text>
+            </view>
+            
+          </view>
+
+          <view class="zuixinneirong2" bindtap="tap">
+            <view class="tupianbufen">
+              <image class="xiaceng" src="/images/banner.png"></image>
+              <!-- <image class="shangceng" src="/images/我的.png"></image> -->
+            </view>
+            <view class="waitanhang">
+              <view>
+              <text class="waitan">外滩环境靠你我</text> 
+              </view>
+              <view class="shiba">
+                <image class="rentubiao" src="/images/人图标.png"></image> 
+                <text  class="shibayibai">18/100</text> 
+              </view>
+              
+            </view>
+            <view class="erlinghang">
+              <text>2019-10-10</text> 
+              <text>共和新路</text>
+            </view>
+            
+          </view>
+        </view>
+        
+
+    </view>
+
+
+</view>

@@ -1,0 +1,33 @@
+<view class="columnPage">
+  <view class="shang">
+    <view class="shangban">
+      <view class="zuoban">
+        <image src="/images/金币.png" class="jinbi"></image>
+      </view>
+      <view class="youban">
+        <view>友币余额</view>
+      </view>
+    </view>
+    <view class="xiaban">9999</view>
+  </view>
+  <view class="zhong">
+    <view class="yiban">
+      <view class="section" wx:for="{{range}}">
+        <view class="yibai">{{item.name}}</view>
+        <view class="yuan">{{item.cost}}</view>
+      </view>
+    </view>
+    <view class="yiban yiban2">
+      <view class="section" wx:for="{{range2}}">
+        <view class="yibai">{{item.name}}</view>
+        <view class="yuan">{{item.cost}}</view>
+      </view>
+    </view>
+  </view>
+  <view class="xia">
+    <view class="background">
+      <view class="fabu">微信支付</view>
+    </view>
+  </view>
+
+</view>

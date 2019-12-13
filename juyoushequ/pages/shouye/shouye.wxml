@@ -1,0 +1,222 @@
+<!--pages/shouye/shouye.wxml-->
+
+
+  <!-- bindtap="suo"-->
+  <view class='page_column' >
+
+   <!-- 搜索 -->
+    <view class='shangbanbufen' >
+
+      <view class="search_arr">
+        <icon class="searchcion" size='15' type='search'></icon>
+        <input class="xx"  resize="true" placeholder="请输入搜索关键字" value="{{searchValue}}"                 bindconfirm="bindInput"/>
+      </view>
+        
+  <!-- 幻灯片 -->
+      <swiper indicator-dots="true" autoplay="true"  interval="5000" duration="500">
+        <view wx:for="{{swiperImg}}" wx:key="">
+          <swiper-item>
+            <image src="{{item.src}}"></image>
+          </swiper-item>
+        </view>
+      </swiper>
+    </view>
+
+
+
+<!-- 最新人气距离切换 -->
+
+  <view class="xiabanbufen">
+  
+    <view class="swiper-tab">
+    
+      <view class="tab-item {{currentTab==0 ? 'on' : ''}}" data-current="0" bindtap="swichNav">最新</view>
+      
+      <view class="tab-item {{currentTab==1 ? 'on' : ''}}" data-current="1" bindtap="swichNav">人气</view>
+      
+      <view class="tab-item {{currentTab==2 ? 'on' : ''}}" data-current="2" bindtap="swichNav">距离</view>
+    
+    </view>
+    
+    
+    
+    <!--内容主体-->
+    
+    <swiper class="swiper" current="{{currentTab}}" duration="200" bindchange="swiperChange">
+    
+      <swiper-item>
+      
+        <!-- 最新 -->
+        <view class="zuixin" bindtap="tap">
+          <view class="zuixinneirong" bindtap="tap">
+            <view class="tupianbufen">
+              <image class="xiaceng" src="/images/banner.png"></image>
+              <image src="/images/报名状态.png" class="baomingzhuangtai"></image>
+            </view>
+            <view class="waitanhang">
+              <view>
+              <text class="waitan">外滩环境靠你我</text> 
+              </view>
+              <view class="shiba">
+                <image class="rentubiao" src="/images/人图标.png"></image> 
+                <text  class="">18/100</text> 
+              </view>
+              
+            </view>
+            <view class="erlinghang">
+              <text>2019-10-10</text> 
+              <text>共和新路</text>
+            </view>
+            
+          </view>
+
+          <view class="zuixinneirong" bindtap="tap">
+            <view class="tupianbufen">
+              <image class="xiaceng" src="/images/banner.png"></image>
+              <!-- <image class="shangceng" src="/images/我的.png"></image> -->
+            </view>
+            <view class="waitanhang">
+              <view>
+              <text class="waitan">外滩环境靠你我</text> 
+              </view>
+              <view class="shiba">
+                <image class="rentubiao" src="/images/人图标.png"></image> 
+                <text  class="">18/100</text> 
+              </view>
+              
+            </view>
+            <view class="erlinghang">
+              <text>2019-10-10</text> 
+              <text>共和新路</text>
+            </view>
+            
+          </view>
+        </view>
+        
+      </swiper-item>
+        
+      <swiper-item>
+        
+        <!-- 最新 -->
+        <view class="zuixin" bindtap="tap">
+          <view class="zuixinneirong">
+            <view class="tupianbufen">
+              <image class="xiaceng" src="/images/banner.png">
+               
+              </image>
+              <!-- <image class="shangceng" src="/images/我的.png"></image> -->
+            </view>
+            <view class="waitanhang">
+              <view>
+              <text class="waitan">外滩环境靠你我</text> 
+              </view>
+              <view class="shiba">
+                <image class="rentubiao" src="/images/人图标.png"></image> 
+                <text  class="">18/100</text> 
+              </view>
+              
+            </view>
+            <view class="erlinghang">
+              <text>2019-10-10</text> 
+              <text>共和新路</text>
+            </view>
+            
+          </view>
+
+          <view class="zuixinneirong" bindtap="tap">
+            <view class="tupianbufen">
+              <image class="xiaceng" src="/images/banner.png"></image>
+              <!-- <image class="shangceng" src="/images/我的.png"></image> -->
+            </view>
+            <view class="waitanhang">
+              <view>
+              <text class="waitan">外滩环境靠你我</text> 
+              </view>
+              <view class="shiba">
+                <image class="rentubiao" src="/images/人图标.png"></image> 
+                <text  class="">18/100</text> 
+              </view>
+              
+            </view>
+            <view class="erlinghang">
+              <text>2019-10-10</text> 
+              <text>共和新路</text>
+            </view>
+            
+          </view>
+        </view>
+        
+        
+      </swiper-item>
+        
+      <swiper-item>
+        
+        <!-- 最新 -->
+        <view class="zuixin" bindtap="tap">
+          <view class="zuixinneirong">
+            <view class="tupianbufen">
+              <image class="xiaceng" src="/images/banner.png"></image>
+              <!-- <image class="shangceng" src="/images/我的.png"></image> -->
+            </view>
+            <view class="waitanhang">
+              <view>
+              <text class="waitan">外滩环境靠你我</text> 
+              </view>
+              <view class="shiba">
+                <image class="rentubiao" src="/images/人图标.png"></image> 
+                <text  class="">18/100</text> 
+              </view>
+              
+            </view>
+            <view class="erlinghang">
+              <text>2019-10-10</text> 
+              <text>共和新路</text>
+            </view>
+            
+          </view>
+
+          <view class="zuixinneirong" bindtap="tap">
+            <view class="tupianbufen">
+              <image class="xiaceng" src="/images/banner.png"></image>
+              <!-- <image class="shangceng" src="/images/我的.png"></image> -->
+            </view>
+            <view class="waitanhang">
+              <view>
+              <text class="waitan">外滩环境靠你我</text> 
+              </view>
+              <view class="shiba">
+                <image class="rentubiao" src="/images/人图标.png"></image> 
+                <text  class="">18/100</text> 
+              </view>
+              
+            </view>
+            <view class="erlinghang">
+              <text>2019-10-10</text> 
+              <text>共和新路</text>
+            </view>
+            
+          </view>
+        </view>
+        
+      </swiper-item>
+    
+    </swiper>
+
+    
+    <image src="/images/笔.png" class="bi" bindtap="tap2">
+    </image>
+   </view>
+
+
+
+
+
+
+
+
+  </view>
+
+
+
+
+

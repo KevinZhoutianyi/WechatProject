@@ -1,0 +1,91 @@
+<view class="columnPage">
+  <view class="shang" bindtap="xitongxiaoxi">
+    <view class="zuoban">
+      <image class="" src="/images/铃铛.png"></image>
+      <view class="xitongxiaoxi">系统消息</view>
+    </view>
+    <view class="youban">
+      <image class="hongdian" src="/images/红点.png"></image>
+    </view>
+  </view>
+
+  <view class="xia">
+    <view class="swiper-tab">
+      <view class="section">
+        <view class="tab-item {{currentTab==0 ? 'on' : ''}}" data-current="0" bindtap="swichNav">
+          <view class="baomingzhong" data-current="0" bindtap="swichNav">活动</view>
+        </view>
+        
+        <view class="tab-item {{currentTab==1 ? 'on' : ''}}" data-current="1" bindtap="swichNav">
+        <view class="baomingzhong" data-current="1" bindtap="swichNav">留言</view>
+        </view>
+     </view>
+    
+    </view>
+
+
+    <swiper class="swiper" current="{{currentTab}}" duration="200" bindchange="swiperChange">
+    
+      <swiper-item>
+        <view class="swiperItem">
+          <view class="erfenzhiyi"  wx:for="{{range}}">
+            <view class="shangban">
+             <view class="zuiyijiangnan">{{item.biaoti}}</view>
+            </view>
+            <view class="xiaban">
+             <view class="zuobanbufen">
+              <image src="{{item.src}}" class="touxiang"></image>
+             </view>
+             <view class="youbanbufen">
+              <view class="zhangdajiehang">
+                <view class="zhangdajiepinglun">  
+                  <view>{{item.nicheng}}</view>
+                  <view class="kongge">评论了你</view>
+                </view>
+                <view class="erlingyijiu">
+                  {{item.riqi}}
+                </view>
+              </view>
+              <view class="pinglunghang">{{item.pinglun}}</view>
+             </view>
+            
+            </view>
+          </view>
+        
+        </view>
+      </swiper-item>
+
+      <swiper-item>
+        <view class="swiperItem">
+          <view class="erfenzhiyi"  wx:for="{{range}}">
+            <view class="shangban">
+             <view class="zuiyijiangnan">{{item.biaoti}}</view>
+            </view>
+            <view class="xiaban">
+             <view class="zuobanbufen">
+              <image src="{{item.src}}" class="touxiang"></image>
+             </view>
+             <view class="youbanbufen">
+              <view class="zhangdajiehang">
+                <view class="zhangdajiepinglun">  
+                  <view>{{item.nicheng}}</view>
+                  <view class="kongge">评论了你</view>
+                </view>
+                <view class="erlingyijiu">
+                  {{item.riqi}}
+                </view>
+              </view>
+              <view class="pinglunghang">{{item.pinglun}}</view>
+             </view>
+            
+            </view>
+          </view>
+        
+        </view>
+      </swiper-item>
+
+    </swiper> 
+      
+  </view>
+
+</view>

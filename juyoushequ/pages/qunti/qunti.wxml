@@ -1,0 +1,31 @@
+<view class="columnPage">
+
+  <view class="shang">
+    <view class="diyihang">
+      <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+        <view class="picker">
+
+          <view class="zuoban">面貌</view>
+          <view class="youban {{good?'on':''}}">{{array[index]}}</view>
+          
+        </view>
+      </picker>
+    </view>
+    <view class="diyihang">
+      <picker bindchange="bindPickerChange2" value="{{index2}}" range="{{array2}}">
+        <view class="picker">
+
+          <view class="zuoban">群体</view>
+          <view class="youban {{good2?'on':''}}">{{array2[index2]}}</view>
+          
+        </view>
+      </picker>
+    </view>
+  </view>
+  <view class="xia">
+    <view class="background" bindtap="baocun">
+      <view class="fabu">保存</view>
+    </view>
+  </view>
+
+</view>

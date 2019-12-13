@@ -1,0 +1,99 @@
+<view class="columnPage">
+ 
+
+  <view class="xia">
+    <view class="swiper-tab">
+      <view class="section">
+        <view class="tab-item {{currentTab==0 ? 'on' : ''}}" data-current="0" bindtap="swichNav">
+          <view class="baomingzhong" data-current="0" bindtap="swichNav">提现记录</view>
+        </view>
+        
+        <view class="tab-item {{currentTab==1 ? 'on' : ''}}" data-current="1" bindtap="swichNav">
+        <view class="baomingzhong" data-current="1" bindtap="swichNav">充值记录</view>
+        </view>
+
+
+         <view class="tab-item {{currentTab==2 ? 'on' : ''}}" data-current="2" bindtap="swichNav">
+        <view class="baomingzhong" data-current="2" bindtap="swichNav">友币记录</view>
+        </view>
+     </view>
+
+
+    
+    
+    </view>
+
+
+    <swiper class="swiper" current="{{currentTab}}" duration="200" bindchange="swiperChange">
+    
+      <swiper-item>
+        <view class="swiperItem">
+          <view class="erfenzhiyi"  wx:for="{{range}}">
+            <view class="diyihang">
+              <view class="zhifubao">{{item.wenzi}}</view>
+              <view class="shuzi">{{item.shuzi}}</view>
+            </view>
+            <view class="dierhang">
+              <view class="erlingkuai">
+                <view class="riqi">{{item.riqi}}</view>
+                <view class="shijian">{{item.shijian}}</view>
+              </view>
+              <view class="zhuangtai" style="color:{{item.color}}">{{item.zhuangtai}}</view>
+            </view>
+            
+           
+          </view>
+        
+        </view>
+      </swiper-item>
+        
+      <swiper-item>
+        <view class="swiperItem">
+          <view class="erfenzhiyi"  wx:for="{{range2}}">
+            <view class="diyihang">
+              <view class="zhifubao">{{item.wenzi}}</view>
+              <view class="shuzi">{{item.shuzi}}</view>
+            </view>
+            <view class="dierhang">
+              <view class="erlingkuai">
+                <view class="riqi">{{item.riqi}}</view>
+                <view class="shijian">{{item.shijian}}</view>
+              </view>
+              <view class="zhuangtai" style="color:{{item.color}}">{{item.zhuangtai}}</view>
+            </view>
+            
+           
+          </view>
+        
+        </view>
+        
+      </swiper-item>
+
+
+      <swiper-item>
+        <view class="swiperItem">
+          <view class="erfenzhiyi"  wx:for="{{range3}}">
+            <view class="diyihang">
+              <view class="zhifubao">{{item.wenzi}}</view>
+              <view class="shuzi">{{item.shuzi}}</view>
+            </view>
+            <view class="dierhang">
+              <view class="erlingkuai">
+                <view class="riqi">{{item.riqi}}</view>
+                <view class="shijian">{{item.shijian}}</view>
+              </view>
+              <view class="zhuangtai" style="color:{{item.color}}">{{item.zhuangtai}}</view>
+            </view>
+            
+           
+          </view>
+        
+        </view>
+        
+      </swiper-item>
+
+    </swiper> 
+      
+  </view>
+
+</view>

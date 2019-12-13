@@ -1,0 +1,167 @@
+.columnPage{
+  width: 100%;
+  height: 150%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  background-color: #F0F0F0;
+}
+
+.shang{
+  width: 100%;
+  height: 18%;
+  background-color: white;
+  margin-bottom: 20rpx;
+  border-top: 1rpx solid rgb(153, 149, 149);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  
+}
+
+.zhong{
+  background-color: white;
+  margin-bottom: 20rpx;
+  height: 32.5%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.xia{
+  height :27.2%;
+  width: 100%;
+  background-color: white;
+
+}
+
+.background{
+  margin-top: 120rpx;
+  width: 600rpx;
+  height: 80rpx;
+  border-radius: 50rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #28A9FA;
+}
+
+.fabu{
+  color: white;
+  font-size: 30rpx;
+}
+
+.liufenzhiyi{
+  width: 100%;
+  height: 16.66667%;
+  border-bottom: 2rpx solid #F0F0F0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+}
+.tupianhang{
+  height: 66.66666%;
+  width: 100%;
+  border-bottom: 1rpx solid #F0F0F0;
+
+}
+.qingshuhang{
+  height: 33.3333%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+}
+.tupianwei{
+  margin-top: 30rpx;
+  margin-left: 30rpx;
+  width: 150rpx;
+  height: 150rpx;
+}
+
+.input{
+  margin-left: 30rpx;
+   font-size: 30rpx;
+ 
+}
+
+
+image{
+  width: 10rpx;
+  height: 10rpx;
+}
+.zhongjian{
+  width: 80%;
+}
+.zhongjian2
+{
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+ 
+  
+
+}
+.section{
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.color{
+  color: #999999;
+}
+
+text{
+  font-size: 30rpx;
+}
+.numberInput{
+  width: 20%;
+}
+
+.erfenzhiyi{
+  height: 50%;
+  width: 100%;
+  border-bottom: 1rpx solid #F0F0F0;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+}
+
+.qingshururenwushuoming{
+  margin-top: 30rpx;
+  width: 80%;
+  font-size: 30rpx;
+}
+
+.bashi{
+  width: 80%;
+  margin-top: 30rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+}
+
+.jihao{
+  width: 25rpx;
+  height: 25rpx;
+}
+.lanzi{
+  font-size: 30rpx;
+  margin-left: 20rpx;
+color: #28A9FA;
+}
